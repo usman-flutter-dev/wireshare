@@ -1,0 +1,21 @@
+
+
+
+lib/
+├── main.dart
+├── core/
+│   ├── constants.dart
+│   ├── enums.dart
+│   ├── app_pages.dart
+│   └── app_bindings.dart
+├── models/
+│   └── server_config.dart
+├── services/
+│   └── ftp_service.dart
+├── viewmodels/
+│   └── home_viewmodel.dart
+└── views/
+    ├── splash/
+    │   └── splash_view.dart
+    └── home/
+        └── home_view.dart

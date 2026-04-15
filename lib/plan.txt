@@ -1,0 +1,57 @@
+Phase-wise Plan
+
+Phase 1 — Project Setup + MVVM Structure
+
+Flutter project (Android + Windows)
+GetX + MVVM folders
+ftp_server package integration
+Base models, constants, enums
+
+Phase 2 — FTP Server Engine
+
+Start/stop FTP server on mobile
+Expose phone storage via PhysicalFileOperations
+Auto-detect local IP
+Username/password (optional auth)
+
+Phase 3 — UI (Mobile)
+
+Show IP + port on screen (e.g. ftp://192.168.1.5:21)
+QR code of the address
+Start/stop server button
+Connection status + connected devices count
+Transfer activity log
+
+Phase 4 — Edge Cases + Polish
+
+Auto-stop server when app goes background
+Foreground service (Android) to keep server alive
+Error handling (port busy, WiFi off, etc.)
+Settings: port, username, password, read/write mode
+
+
+
+LinkedIn Post
+
+🚀 Built a Wireless File Transfer App using Flutter
+Ever needed to quickly move files from your phone to PC without a cable, Bluetooth, or cloud upload?
+WireShare does it differently.
+Open the app on your phone → it starts an FTP server → type the shown IP address in Windows File Explorer → your phone's storage opens like a network drive. That's it.
+What you can do:
+
+Browse all phone files from your PC
+Copy, paste, delete, rename — natively in File Explorer
+No desktop app needed. No cable. No internet.
+
+Speed: Pure LAN transfer. Easily hits 30–80 MB/s on a good WiFi — faster than most USB 2.0 cables.
+What gap it covers:
+Most solutions (Google Drive, WhatsApp, Bluetooth) are slow, need internet, or limit file types. WireShare is instant, offline, and has zero restrictions.
+Built with: Flutter · Dart · GetX · MVVM · ftp_server
+Features we can add next:
+
+FTPS (encrypted transfer)
+QR code scan to connect instantly
+Remote access over internet via Firebase tunnel
+Multi-device connections
+Transfer history + speed stats
+iOS support
